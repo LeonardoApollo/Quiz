@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import 'libs/bootstrap-reboot.min.scss';
+@import 'blocks/quiz';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(91, 79, 204), rgb(117, 52, 133), rgba(0,255,233,1));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.blur {
+    max-width: 1170px;
+    margin: 50px auto 0px auto;
+    box-shadow: 0 4px 30px rgba(179, 163, 163, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    color: #232323;
+    background: rgba($color: #eeeeee, $alpha: .3);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    z-index: 1;
+    padding: 15px;
+}
+
+h2 {
+    font-weight: inherit;
+    font-size: inherit;
+}

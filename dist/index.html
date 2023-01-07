@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div class="quiz blur" id="quiz">
+        <div class="quiz__header" id="header">
+            <h2 class="quiz__header_title">${title}</h2>
+            <h3 class="quiz__header_summary">${massage}</h3>
+            <p class="quiz__header_result">${result}</p>
+        </div>
+
+        <ul class="quiz__list" id="list">
+            <li>
+                <label>
+                    <input type="radio" class="answer" name="answer">
+                    <span>Ответ...</span>
+                </label>
+            </li> 
+            <li>
+                <label>
+                    <input type="radio" class="answer" name="answer">
+                    <span>Ответ...</span>
+                </label>
+            </li>
+        </ul>
+        <button class="quiz__submit submit" id="submit">Ответить</button>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
